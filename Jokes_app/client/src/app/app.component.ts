@@ -23,7 +23,6 @@ export class AppComponent {
     this.getJokes.getJokes().subscribe(
       data => {
         this.jokes = data;
-        console.log("jokes-->"+Object.values(this.jokes));
         if(this.jokes["data"]){
           this.jokesArr = this.jokes["data"];
 
@@ -36,9 +35,8 @@ export class AppComponent {
             }
           }
           
-          console.log("Jokes array -->",this.jokesArr);
+          //Displaying the joke
           this.jokeToBeDisplayed = this.jokesArr[this.counter]["setup"];
-          console.log("jokeToBeDisplayed-->",this.jokeToBeDisplayed);
         }
       },
       err => this.errMsg = err.message

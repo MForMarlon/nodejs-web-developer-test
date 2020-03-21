@@ -1,0 +1,18 @@
+>  The app has been implemented using MEAN stack - Angular 9 for front-end and 
+   Express.js for the back-end
+
+>  The back-end has a simple route which fetches the necessary data from the website 
+   https://official-joke-api.appspot.com/jokes/programming/ten
+
+>  The front-end has a very simple design to display the jokes and punchlines. It has
+   a service which hits the back-end and gets the necessary data
+
+>  To run the application, the node-modules have to be installed. 
+   Run the command 'npm i' in Jokes_app folder for the back-end and inside client 
+   folder for the front-end
+
+>  To start the back-end, open a terminal in Jokes_app folder and run the command: 
+   'node app.js'
+
+>  To start the front-end, open a terminal in client folder and run the command:
+   'ng serve -o --port 4200'

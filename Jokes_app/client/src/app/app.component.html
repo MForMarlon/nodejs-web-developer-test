@@ -21,6 +21,11 @@
     </div>
   </div>
 
+  <!--Displaying blank space-->
+  <div *ngIf="!isPunchline">
+    <br/><br/><br/><br/><br/>
+  </div>
+
   <!-- Display punchline feature -->
   <div class="card-container">
     <div class="card card-small" (click)="displayPunchline()">
