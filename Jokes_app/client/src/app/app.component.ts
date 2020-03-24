@@ -8,7 +8,6 @@ import { GetJokesService } from '../services/get-jokes.service';
 })
 export class AppComponent {
   jokes:object = {};
-  errMsg:string = "";
   jokeToBeDisplayed = "";
   punchlineToBeDisplayed = "";
   jokesArr = [];
@@ -39,7 +38,10 @@ export class AppComponent {
           this.jokeToBeDisplayed = this.jokesArr[this.counter]["setup"];
         }
       },
-      err => this.errMsg = err.message
+      err => {
+        //Displaying error message in place of the joke
+        this.jokeToBeDisplayed = "Sorry... Something went wrong";
+      }
     );
   }
 
